@@ -1,0 +1,11 @@
+{
+  "generator-openapi-repo": {
+    "importExistingSpec": true,
+    "importedSpec": "/opt/api-docs/swagger.yaml",
+    "name": "API",
+    "repo": "Vathasav/apidocstest",
+    "splitSpec": false,
+    "samples": false,
+    "installSwaggerUI": true
+  }
+}
