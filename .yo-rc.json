@@ -5,7 +5,7 @@
     "name": "API",
     "repo": "Vathasav/apidocstest",
     "splitSpec": false,
-    "samples": false,
+    "samples": true,
     "installSwaggerUI": true
   }
 }
