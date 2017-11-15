@@ -49,7 +49,7 @@ paths:
         - Bearer: []
       summary: Administration privilege verification
       x-code-samples:
-        - lang: 'Shell'
+        - lang: 'Curl'
           source: |
             curl -H "Authorization: Bearer <auth_token>" <http_server:port>/api/admin
       tags:
@@ -183,13 +183,29 @@ paths:
             The information related to the file which the PID points to or the
             file content if download is activated or the list of objects if the
             PID points to a collection
-        '401':
+          examples:
+            application/json:
+              Meta:
+               data_type: <class 'dict'>
+               elements: 2
+               errors: 0
+               status: 200
+              Response:
+               data:
+                 EUDAT/CHECKSUM: '123456789'
+                 URL: "<http_server:port>/api/registered/tempZone/home/guest/test.txt"
+               errors: null  
+        '401': 
           description: Missing or invalid credentials or token
       security:
         - Bearer: []
       summary: >-
         Resolve the input PID and retrieve a digital object information or
         download it or list a collection
+      x-code-samples:
+        - lang: 'Curl'
+          source: |
+            curl -H "Authorization: Bearer <auth_token>" <http_server:port>/api/pids/<PID>
       tags:
         - eudat
         - pids

@@ -1,2 +1,0 @@
-lang: Shell
-source: curl -H "Authorization: Bearer <auth_token>"  <http_server:port>/api/admin/users
