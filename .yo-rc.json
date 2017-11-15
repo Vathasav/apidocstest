@@ -2,7 +2,7 @@
   "generator-openapi-repo": {
     "importExistingSpec": true,
     "importedSpec": "/opt/api-docs/swagger.yaml",
-    "name": "API",
+    "name": "EUDAT",
     "repo": "Vathasav/apidocstest",
     "splitSpec": false,
     "samples": true,

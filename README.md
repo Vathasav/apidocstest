@@ -1,4 +1,4 @@
-# API OpenAPI Specification
+# EUDAT OpenAPI Specification
 [![Build Status](https://travis-ci.org/Vathasav/apidocstest.svg?branch=master)](https://travis-ci.org/Vathasav/apidocstest)
 
 ## Steps to finish
